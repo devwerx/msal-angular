@@ -22,8 +22,10 @@ export class MsalService {
       });
   }
 
-  public getUser() {
-    return this.authenticated.then(isauthenticated => isauthenticated ? this.user : {});
+  getUser() {
+    return this.authenticated.then(isauthenticated => {
+        return isauthenticated ? Promise.resolve(this.app.getUser()) : {};
+    });
   }
 
   get authenticated() {

@@ -7,7 +7,10 @@ This is a wrapper module to authenticate Angular applications to the Azure v2 en
 
 ## Change Log
 
-### 2.0.2
+### 1.0.4
+ - getUser internal user set
+
+### 1.0.2
  - Added an option to redirect instead of the popup login
  - Added configuration options navigateToLoginRequestUrl, redirectUrl and callback.
  - Fixed authenticated() returning true when token is expired.
@@ -16,7 +19,7 @@ This is a wrapper module to authenticate Angular applications to the Azure v2 en
 #### BREAKING CHANGES: 
  - authenticated() and getUser() return a Promise.
 
-### 2.0.1
+### 1.0.1
 - Updated for Angular 5
 - Several improvements contributed by Marcelh1983
 - Updated build system
